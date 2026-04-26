@@ -1,0 +1,246 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{float}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue
+}
+
+\title{When Trends Become Policy: Online Attention, Consumer Goods, and Regulation in China}
+
+\author{
+\IEEEauthorblockN{Hanyu Xie}
+\IEEEauthorblockA{
+Columbia University \\
+ hx2413@columbia.edu
+}
+\and
+\IEEEauthorblockN{Haotian Lei}
+\IEEEauthorblockA{
+Columbia University \\
+ hl3945@columbia.edu
+}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper examines how high-visibility online controversies in China are associated with real-world market shifts and policy responses. Rather than presenting a direct China--U.S. empirical comparison, the paper uses China as the main empirical setting and draws on U.S.-based scholarship as a comparative baseline from prior literature. The central question is whether platform-level attention controls in China shape the threshold and pathway through which online discussion becomes a visible firestorm, and whether episodes that cross that threshold are followed by observable spillovers in markets or governance. To explore this question, the paper combines literature review with three illustrative China-focused cases: the 2024 Nongfu Spring boycott crisis, the 2023 Japan nuclear wastewater salt panic, and the 2022 Urumqi residential fire and Zero COVID policy reversal. The empirical analysis aligns attention proxies, stock-market indicators, and event timelines to identify patterned associations between peak attention and subsequent offline outcomes. The first two cases trace direct market and policy spillovers from consumer-facing controversies, while the third case adds a different pathway in which social-media pressure is associated with rapid policy reversal and then with recovery in reopening-sensitive stocks. The goal is not to make strong causal claims, but to clarify a framework linking platform governance, public attention, and spillover under conditions of partial information.
+\end{abstract}
+
+\section{Introduction}
+\subsection{Background}
+Social media platforms do not simply host public attention; they help organize it. Ranking systems, recommendation algorithms, search interfaces, moderation practices, and trending lists all affect whether discussion remains dispersed or becomes legible as a broad public controversy. This question is especially important in China, where platform governance operates within a denser regulatory environment and where recommendation systems are themselves explicit objects of information governance \cite{king2013censorship,gallagher2021whonotwhat,cac2022algorithm}. In that setting, the relevant issue is not whether criticism or rumor exists at all, but how platform-level attention controls shape the conditions under which online discussion becomes widely visible.
+
+Prior scholarship suggests that Chinese information control is selective rather than total. King, Pan, and Roberts argue that censorship is aimed less at criticism as such than at forms of expression that may enable collective action or coordinated escalation \cite{king2013censorship}. Gallagher and Miller similarly show that information control often depends on who is speaking, not only on what is being said \cite{gallagher2021whonotwhat}. Comparative work by Kim et al.\ further suggests that online firestorms in China face a higher threshold of activation than comparable episodes in the United States \cite{kim2021firestorms}. Taken together, these studies imply that platform governance may change the visibility, escalation, and spillover conditions of contentious attention rather than fully determining public opinion.
+
+\subsection{Motivation}
+This topic matters for three reasons. First, online attention can spill beyond the platform itself. Prior work links social media sentiment to financial outcomes in both U.S.\ and Chinese settings, and other research shows that online scandal exposure in China is associated with quicker official response and more severe punishment \cite{adams2023morethanwords,xu2017weibo,chen2024accountability}. Related work on TikTok also suggests that platform attention can shape behavioral intentions through perceived opinion leadership and hedonic engagement, even when the outcome is consumer response rather than policy change \cite{barta2023tiktok}. These studies do not establish a single causal mechanism, but they do indicate that social-media visibility can become economically and politically consequential.
+
+Second, China provides a useful setting for studying how platform design and public attention interact under stronger institutional oversight. The point is not to assume that the state or platforms fully control public reaction. Rather, the Chinese case makes it easier to examine how visibility is filtered, delayed, or amplified under more formalized governance conditions. Third, a China-centered design helps separate two questions that are often conflated: whether criticism exists, and under what conditions that criticism becomes large, visible, and sustained enough to coincide with market or governance responses.
+
+\subsection{Research Question}
+This paper asks: \emph{How do platform-level attention controls in China shape the threshold and pathway through which online discussion becomes a high-visibility firestorm, and once that threshold is crossed, how consistently are market or policy spillovers observed?} A secondary comparative question uses the U.S.\ literature as a baseline rather than as a matched empirical case: are the China cases consistent with prior arguments that more centrally governed platform environments produce fewer visible firestorms, but potentially more consequential ones when they do emerge \cite{kim2021firestorms}?
+
+This framing organizes the analysis around three linked ideas. The first is \emph{threshold}: when does routine online discussion become a public-attention event large enough to matter? The second is \emph{pathway}: through what mechanisms does a topic move from scattered posts to concentrated visibility? The third is \emph{spillover}: once attention becomes sufficiently visible, what kinds of market or governance consequences follow, and on what timeline? Framed this way, the paper treats China as the main empirical setting and uses the United States primarily as a comparative reference point from prior scholarship.
+
+\subsection{Contributions}
+This paper makes four more modest contributions. First, it proposes a conceptual vocabulary that separates threshold, pathway, and spillover instead of treating ``virality'' or ``public opinion'' as a single outcome. Second, it brings together literatures on online firestorms, Chinese information control, and social-media spillovers that are often discussed separately. Third, it applies that framework to three China-based illustrative cases --- the Nongfu Spring controversy, the Japan nuclear wastewater salt panic, and the Urumqi fire / Zero COVID reversal case --- that capture different kinds of offline consequence. Fourth, it clarifies the limits of inference in the current design: because the evidence is case based, proxy dependent, and not paired with a direct U.S.\ case, the paper is designed to identify patterned associations and plausible mechanisms rather than to make strong causal claims.
+
+\section{Related Work}
+\subsection{Online Firestorms and Public Attention}
+Research on online firestorms examines how concentrated waves of negative attention emerge, intensify, and spread across social media. For this paper, the most directly relevant study is Kim et al., who compare trending topics and associated posts on China Weibo and U.S.\ Twitter over a six-month period \cite{kim2021firestorms}. They find that the threshold for classifying an episode as a firestorm appears higher in China than in the United States, and they also show that the targets and expressive styles of firestorms differ across the two settings. That finding is important here because it suggests that platform environment affects not only how much criticism is expressed, but also which disputes become legible as large-scale public events.
+
+At the same time, much of the firestorm literature remains centered on the online episode itself. It is strong on questions of escalation, framing, and audience participation, but it is less likely to trace how attention shocks relate to market behavior, consumer response, or official intervention in a single framework. The present paper builds on this literature by keeping firestorm formation in view while following its possible consequences beyond the platform.
+
+\subsection{Content Moderation, Censorship, and Platform Governance}
+Chinese platform governance research helps explain why threshold dynamics may differ across settings. King, Pan, and Roberts provide the foundational argument that censorship in China is not primarily organized around suppressing criticism of the state; instead, it is more consistently directed at speech that may facilitate collective action or coordinated expression \cite{king2013censorship}. Gallagher and Miller refine this perspective by arguing that China's information control strategy often depends on the identity and political position of the speaker as much as on the content of the message \cite{gallagher2021whonotwhat}. These accounts move the discussion away from a simple state-versus-criticism model and toward a more specific question: how do moderation and visibility rules alter the conditions under which online attention escalates?
+
+This governance logic is also visible in formal regulation. The 2022 \emph{Internet Information Service Algorithmic Recommendation Management Provisions} explicitly cover recommendation systems, ranking and selection systems, and search-related services, indicating that visibility itself is treated as a governable object \cite{cac2022algorithm}. For the present paper, this matters because it supports a platform-governance perspective in which attention is structured not only by users and networks, but also by institutionalized rules that affect discoverability, amplification, and persistence.
+
+\subsection{Social Media Spillovers to Markets and Policy}
+Another literature asks whether online attention predicts or accompanies outcomes beyond the platform. In financial contexts, Adams et al.\ show that overnight Twitter financial sentiment helps predict next-day stock returns in the United States, while Xu et al.\ find time-varying relationships between Weibo sentiment and stock returns in China \cite{adams2023morethanwords,xu2017weibo}. These studies caution against reading sentiment as a simple one-way driver, since market movements can also feed back into online discussion. Even so, they establish that digital attention and market behavior often move together in substantively meaningful ways.
+
+Research on governance spillovers points in a similar direction. Chen and Li find that higher levels of online scandal exposure in China are associated with quicker government response and more severe punishment of officials \cite{chen2024accountability}. Although this literature focuses on political scandals rather than consumer-goods controversies, it is directly relevant because it shows that once online visibility reaches a sufficient scale, it can coincide with formal institutional response. Finally, TikTok-related marketing research suggests that platform exposure can affect behavioral intentions through attention and perceived influence \cite{barta2023tiktok}. This does not make TikTok evidence directly comparable to Chinese crisis cases, but it helps support the broader claim that online visibility can spill into off-platform behavior.
+
+\subsection{Gap in Existing Literature}
+Existing scholarship therefore establishes several pieces of the puzzle, but usually in isolation. One set of studies explains how firestorms form. Another explains how Chinese information control works. A third shows that social-media signals can be associated with market or governance outcomes. What remains less developed is an integrated framework that connects these three dimensions without overstating causal certainty.
+
+This paper addresses that gap by asking not only whether online trends matter, but when they become visible enough to matter, how platform governance shapes the route to that visibility, and whether threshold-crossing events are followed by observable spillovers in markets or policy. In that sense, the paper treats firestorms, information control, and offline consequences as sequentially related parts of the same process rather than as separate topics.
+
+\section{Conceptual Framework}
+\subsection{Threshold}
+The first concept is \emph{threshold}. In this paper, threshold refers to the point at which ordinary online discussion becomes sufficiently concentrated and visible to qualify as a high-attention public event. Threshold should not be defined only by absolute volume, because platforms differ in baseline activity, moderation practices, and visibility rules. Instead, threshold is best understood as an abnormal concentration of attention relative to platform and case context.
+
+To avoid a purely post hoc definition, the current draft uses a simple operational rule. A case is treated as having crossed the visibility threshold when at least two of the following three indicators appear within the same one- to two-week window: \textit{(1)} a major search-interest surge relative to the recent baseline, defined here as either a threefold increase over the prior four-week average or an observation above 60 on the normalized Google Trends scale; \textit{(2)} evidence of breakout attention, such as multiple ``Breakout'' related queries or contemporaneous reporting that the topic had become viral on Weibo; and \textit{(3)} an accompanying sign of abnormal offline attention, such as a sharp increase in investor-search terms, trading volume, or immediate official response. This rule is necessarily heuristic, but it makes the timing logic explicit and keeps threshold from being assigned only after the fact.
+
+The available evidence comes mainly from attention proxies and event timing rather than from complete native-platform logs. Threshold is therefore treated as an observable shift in public visibility, not as a perfectly measured latent state. This definition is consistent with prior comparative firestorm work while remaining sensitive to the specific constraints of China-focused data \cite{kim2021firestorms}.
+
+\subsection{Pathway}
+The second concept is \emph{pathway}. Pathway refers to the process through which an issue travels from scattered online discussion to concentrated visibility and then to possible offline consequences. In simplified form, the pathway runs from an initial trigger, to user discussion, to amplification or suppression dynamics, to a threshold-crossing visibility event, and finally to market or governance response.
+
+In China, this pathway is likely mediated by platform-level attention controls, including moderation practices, recommendation logic, search filtering, and differentiated treatment of speakers or account types \cite{king2013censorship,gallagher2021whonotwhat,cac2022algorithm}. For that reason, pathway is not reducible to organic virality alone. Two issues with similar substantive content may follow different trajectories depending on whether influential accounts participate, whether the discussion is interpreted as socially risky, and whether the topic remains visible long enough to attract broader response. Because the present paper uses case evidence rather than internal platform logs, these mechanisms are inferred cautiously rather than observed directly.
+
+\subsection{Spillover}
+The third concept is \emph{spillover}. Spillover refers to observable consequences outside the platform that are temporally associated with periods of peak online attention. This paper focuses on two forms.
+
+The first is \emph{market spillover}, including stock-price movement, abnormal trading volume, boycott behavior, consumer hoarding, and other measurable shifts in market-relevant activity. The second is \emph{policy or governance spillover}, including official statements, regulatory announcements, enforcement actions, and other institutional responses. These outcomes should not be collapsed into a single category, because they may differ in both timing and mechanism. Market spillovers may emerge quickly through expectation, rumor, or consumer reaction, whereas policy spillovers may reflect slower institutional processing even when they occur within the same attention window.
+
+\subsection{Framework Logic}
+The framework proposed here is sequential and conditional. Platform governance affects the probability that an issue crosses a visibility threshold, the route by which it does so, and the kinds of spillovers that become more or less likely once visibility is achieved. The claim is therefore not that governance fully determines attention or that every online controversy in China produces strong offline effects. The more defensible claim is narrower: platform governance changes visibility, escalation, and spillover conditions.
+
+This logic also helps explain why China may show both fewer visible firestorms and, at times, more consequential ones once they do emerge. If high-visibility attention events are more selectively produced, then crossing the threshold may itself carry informational value for firms, investors, regulators, and consumers. In that sense, visibility in a more governed environment may be rarer, but it may also be more salient when it occurs.
+
+\subsection{Hypotheses}
+\begin{itemize}[leftmargin=1.5em]
+    \item H1: Consistent with prior literature, firestorm thresholds are higher in China than in less centrally governed U.S.\ platform environments.
+    \item H2: In the China cases examined here, episodes that cross a clear visibility threshold are more likely to coincide with observable market or governance spillovers than periods that remain below that threshold.
+    \item H3: When spillovers occur, market responses tend to appear faster than formal policy responses, although both are most likely around peak public-attention windows.
+\end{itemize}
+
+\section{Data and Case Selection}
+\subsection{Case Selection Logic}
+The current empirical design is intentionally narrow and illustrative rather than comprehensive. The paper centers on three China-focused cases with clear event triggers, measurable public-attention spikes, and observable market or policy consequences: the 2024 Nongfu Spring public-opinion crisis, the 2023 Japan nuclear wastewater salt panic, and the 2022 Urumqi residential fire and subsequent Zero COVID policy reversal. Together, these cases widen the range of mechanisms under comparison without pretending to solve the generalization problem.
+
+The first case is a slow-burn reputational controversy in which online hostility toward a consumer brand coincides with prolonged market deterioration. The second is a short, high-intensity panic episode in which online fear, panic buying, and immediate state response unfold almost simultaneously. The third adds a different pathway: a politically charged crisis in which online attention and protest pressure are associated with rapid policy reversal and then with recovery in reopening-sensitive stocks. Framed this way, the cases are not a balanced sample of all Chinese online controversies; they are \emph{illustrative} or \emph{most-likely} cases chosen to compare distinct spillover pathways under a common threshold framework.
+
+This case-selection strategy should not be mistaken for a population-level test. Even with three cases, the design remains theory-building and process-tracing oriented. Its value lies in clarifying how threshold, pathway, and spillover may work in practice while keeping the limits of generalization explicit.
+
+\subsection{Data Sources}
+The empirical dataset combines three main components: stock-market data, public-attention proxies, and event timelines. Stock data were collected from Investing.com historical price pages. Public-attention data were collected from Google Trends using paired keyword series for each case. Event timelines were compiled from financial news reports, government announcements, corporate disclosures, and contemporaneous reporting on Weibo virality, panic behavior, or protest escalation.
+
+Google Trends is used here as an external attention proxy rather than as a direct measure of native Chinese platform visibility. This choice is a limitation, but it is not entirely arbitrary. First, the project requires a measure that is consistent across cases and available at comparable time intervals. Second, the paper is not using Google Trends to claim exact Weibo or Douyin exposure counts; instead, it uses the series as a standardized indicator of broader search interest surrounding already documented crises. Third, the Trends series is interpreted together with event reporting, related-query behavior, stock activity, and policy timing rather than in isolation. The measure therefore serves as one partial signal of public visibility, not as a definitive readout of platform attention.
+
+For the Nongfu Spring case, the stock series covers January 2 to September 30, 2024, while the Google Trends series covers 40 weeks from December 31, 2023 to September 29, 2024. The search-interest variables are ``Nongfu Spring'' and ``Wahaha.'' For the salt panic case, Xuetian Salt and Suyan Jingshen stock data cover July 3 to October 31, 2023, while the Google Trends series covers 19 weeks from June 25 to October 29, 2023. The search-interest variables are ``Japan nuclear wastewater'' and ``salt panic.'' For the Urumqi case, the stock series covers reopening-sensitive firms --- Air China (0753.HK), Haidilao (6862.HK), and Trip.com (TCOM) --- over an October 2022 to February 2023 window. The weekly attention series centers on protest- and reopening-related search terms, especially ``China protests'' and ``zero covid,'' and is supplemented by related-query panels for ``Urumqi fire'' and ``China protests.'' The notebook-based case analysis uses 23 weekly observations and a dated policy timeline running from the November 24, 2022 fire to the December 7, 2022 release of the ``New Ten Measures'' and the later December 26 relaxation of quarantine rules.
+
+\subsection{Variables}
+The main independent variables are attention intensity and attention timing. In practice, these are measured through Google Trends levels, sharp week-to-week increases, related-query breakout signals, and narrative evidence that a topic became broadly visible on Chinese social media. The main dependent variables are market spillovers and policy spillovers. Market spillovers include price movement, abnormal trading volume, and evidence of investor-oriented search behavior. Policy spillovers include official announcements, import restrictions, supply-assurance statements, major policy reversals, and other institutional responses temporally aligned with peak attention windows.
+
+The paper also treats case duration and event type as important contextual variables. Nongfu Spring represents a slower, reputational controversy, while the salt panic represents a short, high-intensity coordination shock. The Urumqi case adds a more explicitly political pathway in which the most consequential immediate spillover is not simply price movement, but central policy reversal followed by market repricing in firms expected to benefit from reopening.
+
+\subsection{Data Processing and Alignment}
+Because the stock series are daily while Google Trends data are weekly, daily stock data were resampled to weekly frequency using week-ending Sunday averages for price, summed volume, and aggregated weekly returns. The weekly stock series were then matched to the Google Trends timestamps using nearest-date alignment within a seven-day tolerance window. This procedure produced 40 matched weekly observations for the Nongfu Spring case, 17 matched weekly observations for each salt-stock series, and 23 weekly observations for the Urumqi case aligned to each of the three reopening-sensitive stocks.
+
+\section{Methodology}
+\subsection{Analytical Strategy}
+The empirical strategy is a structured, case-based comparison rather than a large-$N$ statistical test. The goal is to evaluate whether the observed sequences in three illustrative cases are consistent with the paper's threshold--pathway--spillover framework. For each case, the analysis proceeds in four steps: \textit{(1)} identify the triggering event and build a timeline of attention-relevant developments; \textit{(2)} locate the threshold-crossing window using the operational rule defined above; \textit{(3)} compare the timing of threshold crossing with market indicators and policy responses; and \textit{(4)} compare the cases to see whether distinct types of spillover are associated with distinct attention pathways.
+
+This design is appropriate for a midterm progress paper because it prioritizes transparency over statistical sophistication. It cannot establish causality, but it can show whether the timing and pattern of observed events are consistent with the conceptual expectations laid out earlier.
+
+\subsection{Operationalization of Threshold and Spillover}
+The threshold rule is used primarily to identify \emph{when} a case enters a high-visibility phase, not to classify all possible online topics into firestorms and non-firestorms. In the Nongfu Spring case, threshold crossing is identified in early March 2024, when search interest jumped sharply above the recent baseline, the controversy was reported as viral on Weibo, and investor-related search behavior increased. In the salt panic case, threshold crossing is identified in late August 2023, when search interest jumped from near zero to the maximum normalized level, multiple related queries were marked as breakout, and market and policy reactions followed almost immediately. In the Urumqi case, threshold crossing is identified in the late-November 2022 window, when protest-related search attention surged, ``China protests'' reached the maximum normalized weekly value in the week of November 27, and the event sequence quickly moved from online pressure to nationwide protest visibility and central policy change.
+
+Spillovers are operationalized in two ways. Market spillover is identified through abnormal changes in price level, trading volume, and the timing of investor-oriented search activity. Policy spillover is identified through dated official actions or public institutional responses that occur during or immediately after the threshold-crossing window. The Urumqi case requires one additional distinction: in that case the main sequence is not simply trend to market, but trend to policy reversal to market recovery. The relative timing of these outcomes is then used to assess H3.
+
+\subsection{Event Windows and Comparison Logic}
+For each case, the timeline is divided into pre-crisis, crisis, and post-crisis periods. The pre-crisis window establishes a short baseline for price, volume, and search attention. The crisis window begins when the threshold rule is satisfied and continues until attention and market activity begin to normalize. The post-crisis window captures whether effects dissipate quickly or remain persistent. In the Urumqi case, the crisis window is further divided into a protest-pressure period (November 24 to December 7, 2022) and a reopening-rally period after the policy reversal, because the case is analytically about a two-step spillover chain rather than a single shock.
+
+This event-window logic serves two purposes. First, it helps distinguish abrupt attention shocks from longer-burn reputational crises. Second, it allows the paper to compare whether market responses appear contemporaneously with public attention while policy responses lag behind, which is the core expectation behind H3. The Urumqi case is especially useful here because it may represent a boundary condition: policy response was unusually fast, and markets appear to have started repricing before the formal announcement itself. Given the small number of cases, the comparison remains descriptive and interpretive rather than inferential.
+
+\subsection{Role of Survey Evidence}
+Survey evidence is not yet part of the current empirical findings and should not be treated as if it were already fully integrated into the results. In this midterm version, the survey instrument is included only as a planned triangulation tool and is reproduced in the appendix for transparency. The intended purpose of the survey is to capture awareness, perceived credibility, and self-reported behavioral influence for selected events, especially where direct platform-level exposure data are difficult to obtain. Until response data are incorporated and analyzed, however, the core findings of the paper rest on literature review, case timelines, attention proxies, and market/policy evidence alone.
+
+\subsection{Operational Challenges}
+Several challenges shape the analysis. The first is proxy validity: Google Trends captures external search interest, not native Weibo or Douyin visibility. This matters especially for the Urumqi case, where domestic platform intensity was likely much higher than the public global search series can show. The second is comparability: Chinese and U.S. platforms differ in moderation, recommendation, and discovery systems, which makes direct cross-platform comparison difficult. The third is causal identification: attention spikes, market movements, and policy responses may be jointly driven by broader news shocks, macroeconomic expectations, or strategic behavior by firms and regulators. For these reasons, the paper interprets temporal alignment as evidence of patterned association and plausible mechanism, not as proof of direct causal effect.
+
+\section{Results}
+\subsection{Case 1: Nongfu Spring Public Opinion Crisis}
+The Nongfu Spring case shows a prolonged online controversy associated with sustained market deterioration. After the death of Wahaha founder Zong Qinghou on February 25, 2024, online sympathy toward Wahaha quickly evolved into a boycott campaign against Nongfu Spring. The event timeline indicates that the boycott was widely reported as viral on Weibo by March 3, followed by later corporate responses and financial disclosures.
+
+Using the operational rule defined above, the case appears to cross the visibility threshold in early March 2024. Search interest for ``Nongfu Spring'' rose from a baseline of about 10 to 68 in the week of March 10, a 5.8-fold increase over the recent background level. Related search queries also indicate rising investor attention: the query ``nongfu spring stock price'' increased by 190\%. Together with contemporaneous reporting that the boycott had become highly visible on Weibo, these patterns are consistent with threshold crossing rather than routine background discussion.
+
+The stock and search data suggest that this was not a short-lived attention spike but a persistent reputational shock. Nongfu Spring's stock price ranged from a peak of HKD 47.95 to a trough of HKD 24.35 during the observation window, implying a maximum decline of 49.2\%. Average price levels also deteriorated over time: the pre-crisis average was HKD 42.25, the crisis-period average was HKD 43.03, and the post-crisis average fell to HKD 29.95. Trading activity increased as well, with average volume rising from 4.2 million shares before the crisis to 4.6 million during the crisis, a roughly 10\% increase.
+
+Taken together, these patterns suggest a sequence in which online attention intensified first, then remained salient long enough to coincide with a sustained repricing of the company's market value. The case is therefore consistent with the paper's broader argument that once a visibility threshold is crossed, reputational firestorms can be associated with measurable offline effects even in a more tightly regulated platform environment. Still, the evidence should be read as temporal association rather than definitive proof that online attention alone caused the market decline.
+
+\subsection{Case 2: Japan Nuclear Wastewater Salt Panic}
+The salt panic case shows a different pathway: a sudden, high-intensity attention shock followed by immediate market reaction and rapid policy intervention. In the days surrounding Japan's August 24, 2023 release of treated nuclear wastewater, panic spread quickly across Chinese social media, triggering consumer hoarding of salt and sharp short-term stock movements in major salt producers. Government response also occurred immediately, including China Customs Announcement No.~103 banning Japanese aquatic imports, a China Salt Industry Group statement assuring adequate salt supply, and provincial warnings against hoarding and price gouging.
+
+By the paper's operational rule, this case crosses the visibility threshold in late August 2023. Google Trends data show that search interest for ``Japan nuclear wastewater'' rose from 0 to 100 in a single week, the maximum value on the platform's scale, then fell to 43 the following week and returned close to zero by October. Related-query data show that 12 out of 22 rising queries were marked as ``Breakout,'' indicating increases above 5000\%. The crisis also coincided with immediate abnormal market activity and formal institutional response, satisfying the second and third threshold indicators simultaneously.
+
+The market response was abrupt. For Xuetian Salt, the stock price ranged from CNY 6.02 to CNY 8.29, with a maximum decline of 27.4\% from peak to trough across the study window. The pre-crisis average price was CNY 7.78, the crisis-period average was CNY 7.83, and the post-crisis average fell to CNY 6.66. Average trading volume rose from 7.7 million shares pre-crisis to 72.0 million during the crisis, an increase of 835\%. For Suyan Jingshen, the stock ranged from CNY 8.36 to CNY 11.52, also implying a maximum decline of 27.4\%. Its pre-crisis average price was CNY 9.85, crisis-period average price was CNY 10.68, and post-crisis average was CNY 9.10. Volume increased from 5.2 million shares before the crisis to 71.5 million during the crisis, a 1282\% increase.
+
+Unlike the Nongfu Spring case, this crisis completed a full cycle quickly. Existing notes indicate that both public sentiment and stock prices returned to near pre-crisis levels within roughly two weeks. This makes the case especially useful for distinguishing between long-burn reputation crises and short-panic mobilization events. The evidence is consistent with an attention burst that coincided with immediate consumer, market, and policy reactions inside a narrow time window, rather than with a long and cumulative reputational process.
+
+\subsection{Case 3: Urumqi Residential Fire and Zero COVID Policy Reversal}
+The third case differs from the first two because the most important offline consequence is a rapid policy shift rather than a direct brand shock or consumer panic. After the Urumqi residential fire on November 24, 2022, online anger and mourning fed into broader criticism of Zero COVID controls. By November 27, white-paper protests had gone viral, and by December 7 the central government released the ``New Ten Measures,'' widely understood as the effective end of Zero COVID. In the notebook analysis for this case, the relevant stocks are reopening-sensitive firms --- Air China, Haidilao, and Trip.com --- observed over an October 2022 to February 2023 window.
+
+By the paper's operational rule, the case appears to cross the visibility threshold in the week of November 27, 2022. Protest-related search attention reached the maximum normalized level of 100 for ``China protests,'' and the related-query panels for ``Urumqi fire'' and ``China protests'' indicate breakout-style escalation rather than routine background interest. Unlike the first two cases, however, threshold crossing here is not interpreted mainly through consumer or investor search behavior around a specific product. Instead, it is interpreted through the convergence of fire-related attention, national protest visibility, and the rapid movement of the issue onto the policy agenda.
+
+The spillover sequence is correspondingly different. The notebook frames the case as a three-stage chain: social-media pressure, then government policy reversal, then market recovery in reopening-sensitive stocks. The timing is unusually compressed. According to the notebook's summary, the December 7 Zero COVID reversal occurred just 13 days after protest search interest peaked in the week of November 27. Market indicators appear to have moved during the protest window and after the policy announcement rather than only afterward. Air China and Haidilao are described as beginning to rise before December 7, suggesting that markets were pricing in the probability of reopening from online signals alone. On the announcement day itself, Air China traded 128 million shares, the highest single-day volume in the notebook's sample.
+
+This case therefore extends the paper beyond the two consumer-facing pathways already identified. Nongfu Spring is a reputational controversy, and the salt panic is an acute coordination shock. The Urumqi case instead points to a policy-forcing pathway in which the most consequential spillover is central policy reversal and the market response follows as an anticipatory reopening rally. The case is also analytically useful because it highlights a censorship paradox: even in a tightly governed information environment, an online issue may become consequential when the signal is intense enough, politically salient enough, and difficult to contain through ordinary visibility controls. At the same time, the evidence should still be read cautiously. The notebook itself notes that Google Trends captures global rather than domestic searches and that Granger-style timing tests in a 23-week sample should not be treated as proof of true causal effect.
+
+\begin{figure}[t]
+    \centering
+    \fbox{\rule{0pt}{1.65in}\rule{0.95\linewidth}{0pt}}
+    \caption{Reserved space for Case 3 main figure: protest-related search interest and Air China price around the November 24 to December 7, 2022 event window.}
+    \label{fig:case3_search_airchina}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \fbox{\rule{0pt}{1.65in}\rule{0.95\linewidth}{0pt}}
+    \caption{Reserved space for Case 3 secondary figure: reopening-stock comparison or event-study graphic around the December 7 policy reversal.}
+    \label{fig:case3_reopening_compare}
+\end{figure}
+
+\subsection{Cross-Case Comparison}
+Taken together, the three cases reveal three distinct modes of spillover. Nongfu Spring represents a slower but more persistent reputational firestorm. The initial attention spike was smaller in absolute Google Trends terms than the salt-panic case, but the market effect was deeper and lasted much longer, culminating in an almost 50\% decline from peak to trough. The salt panic, by contrast, generated a much sharper search-intensity spike and extraordinary volume surges in salt-company stocks, but the price effect corrected rapidly. The Urumqi case introduces a third pathway: threshold crossing in a politically salient online controversy, followed by rapid policy reversal and a repricing of reopening-sensitive stocks.
+
+This comparison suggests that the pathway from online attention to offline consequence is not uniform. In one pathway, public attention appears to damage firm reputation and coincide with a prolonged repricing process. In another, public attention appears to trigger immediate consumer panic, speculative trading, and fast state response, after which both attention and prices normalize. In the third, public attention appears to raise the perceived probability of policy change, so the main sequence runs from contentious visibility to state action to market recovery. These differences strengthen the paper's argument that ``spillover'' should not be treated as a single outcome variable. Market spillover and policy spillover are related but analytically distinct, and crisis duration appears to matter for which type dominates.
+
+The timing patterns are also informative for H3. In the first two cases, market indicators moved during or immediately after the threshold-crossing window, while policy responses were either concurrent with the panic burst or followed shortly afterward. The Urumqi case complicates that pattern in a useful way: policy response was unusually fast, and some market repricing appears to have begun during the protest window before the formal December 7 announcement. With only three cases, this is not enough to establish a general law. Still, the overall comparison is broadly consistent with the expectation that market and policy spillovers cluster around periods of peak public attention, even if the ordering differs by pathway.
+
+\section{Discussion}
+The current findings support a more cautious version of the paper's central claim. They do not show that every online trend in China produces strong offline consequences. Instead, they suggest that when an issue becomes visible enough to satisfy a transparent threshold rule, substantial spillovers can follow. This interpretation is consistent with prior literature arguing that platform governance in China shapes what becomes broadly visible, while not fully determining how citizens react once a topic breaks through.
+
+The Nongfu Spring case is useful for showing that even under a tightly managed media environment, a controversy can remain salient long enough to coincide with significant reputational and market costs. The salt panic case suggests a different mechanism: online attention can function as a rapid coordination signal, producing immediate behavioral change, speculative market movement, and near-simultaneous government intervention. The Urumqi case adds a more overtly political mechanism in which online outrage and protest visibility are associated with rapid policy reversal and then with recovery in reopening-sensitive stocks. Put differently, the three cases now map onto three pathways: slow-burn confidence shock, acute panic-and-response cycle, and policy-forcing protest pressure.
+
+The broader comparative implication should also be stated carefully. The current draft does not directly compare Chinese cases with matched U.S.\ cases. As a result, H1 is assessed primarily in relation to existing comparative literature rather than through original cross-national evidence in this paper. What the present cases can do is show that a China-centered threshold framework is empirically plausible and that once high visibility is achieved, substantial spillovers may coincide with it. The Urumqi case is especially important here because it highlights the limits of attention control under extreme public pressure: censorship and moderation may still shape visibility, but they do not guarantee that politically salient signals can be fully contained.
+
+At the same time, the evidence should be interpreted cautiously. Even with the third case added, the paper remains proxy dependent and case based. Platform comparability remains difficult, especially because Weibo, Douyin, and U.S.\ platforms differ in moderation, discovery, and visibility rules. In addition, some China-side platform data are difficult to access directly, which means that parts of the current analysis rely on Google Trends and secondary archival evidence rather than complete native-platform histories. For that reason, the results are best understood as case-based evidence of patterned association, not definitive proof of causality.
+
+\section{Limitations}
+\begin{itemize}[leftmargin=1.5em]
+    \item The empirical design is China-centered and case based, so the paper does not provide a direct matched China--U.S. test.
+    \item The three cases are illustrative and likely \emph{most-likely} cases, which limits how far the findings can be generalized.
+    \item Platform data are incomplete and not equally accessible across settings; Google Trends is only a partial proxy for Chinese platform visibility, and this limitation is especially important in the Urumqi case.
+    \item Measures of ``threshold'' and ``spillover'' rely partly on heuristic operational rules rather than direct platform observables.
+    \item The Urumqi case includes only 23 weekly observations, so lead-lag and Granger-style results should be interpreted with particular caution.
+    \item Causality is difficult to establish because attention spikes, market movements, and policy responses may be jointly shaped by broader news shocks, economic conditions, and strategic behavior.
+\end{itemize}
+
+\section{Conclusion}
+This paper develops a China-centered framework for thinking about how online attention becomes consequential. Rather than treating firestorms as purely communicative events, it argues that platform governance, visibility thresholds, and offline spillovers should be understood as part of the same sequence. The evidence from the Nongfu Spring crisis, the Japan nuclear wastewater salt panic, and the Urumqi fire / Zero COVID reversal case suggests that once public attention becomes sufficiently visible, significant market and policy responses may coincide with it, although the form and duration of those spillovers differ across cases.
+
+The contribution of the current draft is therefore not a definitive causal test, but a clearer research design supported by three analytically distinct cases. By narrowing the scope, making the threshold rule explicit, distinguishing illustrative cases from population claims, and comparing a reputational pathway, a panic pathway, and a policy-forcing pathway within the same framework, the paper is better positioned for later expansion. A fuller final version would still benefit from stronger native-platform evidence, more systematic event coding, completed figure insertion for the third case, and either a direct U.S.\ case or a more explicitly China-only framing.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\appendices
+\section{Survey Instrument}
+The survey instrument is retained as a planned triangulation tool for the final version of the project. In the current midterm draft, it is not yet used as part of the empirical analysis, and its role is limited to documenting the intended design for collecting awareness, perceived credibility, and self-reported behavioral influence around selected events.
+
+\section{Additional Figures and Tables}
+% Large tables / robustness checks / extra charts
+% Additional Codex figure placement for Case 3 can also be added here if needed.
+
+\end{document}
