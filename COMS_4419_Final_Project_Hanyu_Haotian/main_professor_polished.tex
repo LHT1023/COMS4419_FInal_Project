@@ -4,6 +4,7 @@
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \graphicspath{{figures/}{../figures/}}
 \usepackage{booktabs}
 \usepackage{multirow}
@@ -14,10 +15,7 @@
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{float}
-\usepackage{placeins}
-\usepackage{stfloats}
-
-\setlength{\dbltextfloatsep}{8pt plus 1pt minus 2pt}
+\usepackage[section]{placeins}
 
 \hypersetup{
     colorlinks=true,
@@ -137,7 +135,7 @@ The first three cases form the core consumer-goods comparison. The Nongfu Spring
 
 The Urumqi fire is included as a boundary case. Its main spillover was not consumer purchasing behavior, but policy pressure and government response. It is analytically useful because it shows the outer limit of the paper's argument: when an online controversy becomes politically sensitive and highly visible, platform control may shape its visibility, but it may not fully prevent public pressure from becoming legible to the state.
 
-\begin{table*}[t]
+\begin{table*}[!t]
 \centering
 \caption{Case Selection Logic}
 \label{tab:case_selection}
@@ -155,6 +153,7 @@ Urumqi fire & Residential fire and protest visibility & Boundary policy pathway 
 \end{tabular}
 }
 \end{table*}
+\FloatBarrier
 
 \section{Measurement Strategy and Google Trends Limitation}
 A central measurement challenge in this project is the limited availability of high-quality historical data from Chinese social-media platforms. Ideally, the analysis would use archived Weibo hot-search data, Douyin trend data, WeChat article circulation, Xiaohongshu engagement, and moderation records. In practice, those data are difficult to obtain consistently across cases, especially after the events have already passed. This limitation shapes the paper's empirical strategy.
@@ -167,7 +166,7 @@ The paper therefore triangulates Google Trends with other evidence: event timeli
 
 Unless otherwise noted, case figures combine Google Trends search-interest data with Investing.com historical-price and trading-volume data. Event windows are reconstructed from cited media and official sources. Survey visualizations are based on the author survey output files in \texttt{survey\_outputs/} \cite{googletrendsfaq,investinghistorical}.
 
-\begin{table}[t]
+\begin{table}[!t]
 \centering
 \caption{Google Trends Variables}
 \label{tab:trends_variables}
@@ -192,7 +191,7 @@ The survey supports the paper's decision to treat the selected cases as recogniz
 
 Table~\ref{tab:survey_summary} summarizes the key survey findings. Appendix Fig.~\ref{fig:appendix_survey} reports the cleaned survey visualizations.
 
-\begin{table}[t]
+\begin{table}[H]
 \centering
 \caption{Key Survey Findings}
 \label{tab:survey_summary}
@@ -231,46 +230,33 @@ The case analysis proceeds from consumer-goods spillovers to the boundary policy
 The comparison is organized around three questions. First, what triggered the online controversy? Second, how did the controversy move from platform-specific discussion into broader public attention? Third, what type of spillover followed: brand damage, panic buying, product-demand repricing, or government response?
 
 \subsection{Case 1: Nongfu Spring and Brand-Boycott Spillover}
-The Nongfu Spring case represents a brand-boycott pathway. The trigger was not a formal regulatory event or a public-health emergency, but a reputational controversy that developed after the death of Wahaha founder Zong Qinghou in February 2024. Online sympathy for Wahaha became linked to criticism of Nongfu Spring, and the discussion developed into a broader boycott narrative around brand identity, nationalism, and consumer loyalty \cite{caixin2024nongfu}. Figure~\ref{fig:nongfu_trends_stock} links the attention breakout to the beginning of the stock-market decline.
+The Nongfu Spring case represents a brand-boycott pathway. The trigger was not a formal regulatory event or a public-health emergency, but a reputational controversy that developed after the death of Wahaha founder Zong Qinghou in February 2024. Online sympathy for Wahaha became linked to criticism of Nongfu Spring, and the discussion developed into a broader boycott narrative around brand identity, nationalism, and consumer loyalty \cite{caixin2024nongfu}.
 
-\begin{figure}[t]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{figures/Fig1_NongfuSpring_Trends_vs_Stock.png}
-    \caption{Case 1: weekly search attention and Nongfu Spring stock price. The figure highlights the early-March visibility break and helps distinguish threshold crossing from the longer-run persistence that follows.}
-    \label{fig:nongfu_trends_stock}
+    \includegraphics[width=\columnwidth]{figures/Fig1_NongfuSpring_Trends_vs_Stock.png}
+    \caption{Nongfu Spring attention and stock movement during the boycott window. The aligned attention and market movement support the reputational-spillover interpretation.}
+    \label{fig:nongfu_case}
 \end{figure}
 
-The key point in this case is that the controversy did not matter only as online discussion. It became consequential when the brand dispute moved into broader public salience. Search interest, media discussion, investor attention, and stock-market movement became temporally aligned, as shown in Figure~\ref{fig:nongfu_trends_stock}. In this sense, the case fits the paper's broader argument: a controversy becomes more important when it breaks out of platform-specific discussion and becomes legible to consumers and investors. Figure~\ref{fig:nongfu_price_volume} then shows that the price decline and heavier trading persisted beyond the initial trigger window.
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\linewidth]{figures/Fig2_NongfuSpring_Price_Volume.png}
-    \caption{Case 1: Nongfu Spring price and volume. The persistent decline and elevated trading activity distinguish slow-burn reputational damage from a short correction cycle.}
-    \label{fig:nongfu_price_volume}
-\end{figure}
+The key point in this case is that the controversy did not matter only as online discussion. It became consequential when the brand dispute moved into broader public salience. Search interest, media discussion, investor attention, and stock-market movement became temporally aligned, as summarized in Fig.~\ref{fig:nongfu_case}. In this sense, the case fits the paper's broader argument: a controversy becomes more important when it breaks out of platform-specific discussion and becomes legible to consumers and investors.
 
 The main spillover was persistent reputational and market damage rather than a short panic spike. The stock decline was not limited to the initial attention burst, which suggests that the controversy became incorporated into a longer reassessment of brand value and consumer sentiment. This makes Nongfu Spring different from the salt panic case, where the attention spike and market response were sharper but shorter.
 
 The case does not prove that online attention alone caused the stock decline. Other business, market, and financial factors may also have contributed. However, the timing supports the interpretation that online visibility was associated with reputational spillover. Among the three consumer-goods cases, Nongfu Spring shows the slowest but most persistent pathway.
+\FloatBarrier
 
 \subsection{Case 2: Japan Wastewater Salt Panic and Panic-Buying Spillover}
-The salt panic case represents a panic-buying and supply-reassurance pathway. The trigger was Japan's release of treated nuclear wastewater in August 2023, which generated public concern about food safety and salt supply. Online discussion helped transform a geopolitical and public-health concern into a consumer-goods panic. The result was not only discussion, but hoarding behavior, salt-sector stock volatility, and official reassurance about supply \cite{reuters2023saltpanic,reuters2023saltmaker,li2022panic}. Figure~\ref{fig:salt_trends_stocks} shows how the attention surge and salt-sector stock reaction concentrate in the same short window.
+The salt panic case represents a panic-buying and supply-reassurance pathway. The trigger was Japan's release of treated nuclear wastewater in August 2023, which generated public concern about food safety and salt supply. Online discussion helped transform a geopolitical and public-health concern into a consumer-goods panic. The result was not only discussion, but hoarding behavior, salt-sector stock volatility, and official reassurance about supply \cite{reuters2023saltpanic,reuters2023saltmaker,li2022panic}.
 
-\begin{figure}[t]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{figures/Fig4_SaltPanic_Trends_vs_Stocks.png}
-    \caption{Case 2: weekly salt-panic attention and salt-sector stocks. The figure shows how sharply the attention burst rises and falls, which supports the panic-coordination interpretation.}
-    \label{fig:salt_trends_stocks}
+    \includegraphics[width=\columnwidth]{figures/Fig4_SaltPanic_Trends_vs_Stocks.png}
+    \caption{Salt panic attention and salt-sector stock movement during the Japan wastewater release window. The sharp attention spike supports the panic-buying pathway interpretation.}
+    \label{fig:salt_case}
 \end{figure}
 
-This case is important because the spillover was immediate. Search attention rose sharply, consumer panic appeared quickly, and market and government responses occurred in the same narrow window, as shown in Figure~\ref{fig:salt_trends_stocks}. Compared with the Nongfu Spring case, the salt panic was shorter and more intense. It shows how online visibility can coordinate behavior around a simple consumer action: buying and storing salt. Figure~\ref{fig:salt_price_volume} then shows the burst-period volume spike and the quick reversal that followed.
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\linewidth]{figures/Fig5_SaltPanic_Price_Volume.png}
-    \caption{Case 2: salt-stock price and volume. Extraordinary burst-period volume and the quick reversal help distinguish panic coordination from the longer persistence seen in Case 1.}
-    \label{fig:salt_price_volume}
-\end{figure}
+This case is important because the spillover was immediate. Search attention rose sharply, consumer panic appeared quickly, and market and government responses occurred in the same narrow window, as shown in Fig.~\ref{fig:salt_case}. Compared with the Nongfu Spring case, the salt panic was shorter and more intense. It shows how online visibility can coordinate behavior around a simple consumer action: buying and storing salt.
 
 The market response was visible in both price movement and trading volume among salt-related firms. However, the more important analytical point is not only the stock movement. It is the combination of consumer hoarding and government supply reassurance. The government response suggests that when an online trend creates visible market disorder or shortage expectations, the state may respond not only by moderating discussion but also by reassuring supply, warning against hoarding, or stabilizing prices \cite{reuters2023saltmaker}.
 
@@ -280,56 +266,43 @@ The salt panic therefore supports the paper's claim that consumer-goods spillove
 \subsection{Case 3: Lianhua Qingwen and Medicine-Demand Repricing}
 The Lianhua Qingwen case represents a medicine-demand and pharmaceutical-repricing pathway. Unlike Nongfu Spring, this was not a boycott. Unlike the salt panic, it was not a simple hoarding event around a basic commodity. The trigger was the reopening period after China began moving away from Zero COVID controls in late 2022. As infection concerns increased, public attention turned toward COVID-related medicines, including Lianhua Qingwen \cite{statecouncil2022tenmeasures,afp2022medicines}.
 
-This case shows how online attention can shape demand expectations. The controversy around Lianhua Qingwen was connected to both public-health uncertainty and consumer search for treatment options. Product-specific attention became embedded in a broader reopening-era health-information environment, and Figure~\ref{fig:lianhua_trends_yiling} places that surge alongside Yiling Pharmaceutical's market movement. This distinction matters because the case should not be interpreted as a general pharmaceutical rally. The strongest market response was concentrated around the company most directly linked to the product \cite{duan2021covid,li2022panic,afp2022medicines}.
-
-\begin{figure}[t]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{figures/C4_Fig1_Lianhua_Trends_vs_Yiling.png}
-    \caption{Case 3: weekly Lianhua Qingwen attention and Yiling Pharmaceutical stock price. The figure highlights the post-reopening attention surge and its concentration around the product-linked firm.}
-    \label{fig:lianhua_trends_yiling}
+    \includegraphics[width=\columnwidth]{figures/C4_Fig1_Lianhua_Trends_vs_Yiling.png}
+    \caption{Lianhua Qingwen attention and Yiling Pharmaceutical movement during the reopening medicine-demand window. The product-linked attention pattern supports the medicine-demand repricing interpretation.}
+    \label{fig:lianhua_case}
 \end{figure}
 
-The comparison with Tongrentang helps clarify the mechanism. If the effect were only a broad traditional-medicine or pharmaceutical-sector rally, both firms would be expected to move similarly. Instead, the product-linked firm showed a stronger rally and clearer correction. This pattern supports the interpretation that product-specific online attention and medicine-demand expectations were associated with the repricing. Figure~\ref{fig:lianhua_yiling_tongrentang} then compares the two stocks directly and shows the sharper rally-correction cycle in Yiling.
+This case shows how online attention can shape demand expectations. The controversy around Lianhua Qingwen was connected to both public-health uncertainty and consumer search for treatment options. Product-specific attention became embedded in a broader reopening-era health-information environment, as summarized in Fig.~\ref{fig:lianhua_case}. This distinction matters because the case should not be interpreted as a general pharmaceutical rally. The strongest market response was concentrated around the company most directly linked to the product \cite{duan2021covid,li2022panic,afp2022medicines}.
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\linewidth]{figures/C4_Fig3_Yiling_Tongrentang_Price_Volume.png}
-    \caption{Case 3: Yiling Pharmaceutical versus Tongrentang. The comparison shows stronger direct exposure and a clearer correction in Yiling, which helps distinguish product-linked repricing from a broad sector rally.}
-    \label{fig:lianhua_yiling_tongrentang}
-\end{figure}
+The comparison with Tongrentang helps clarify the mechanism. If the effect were only a broad traditional-medicine or pharmaceutical-sector rally, both firms would be expected to move similarly. Instead, the product-linked firm showed a stronger rally and clearer correction. This pattern supports the interpretation that product-specific online attention and medicine-demand expectations were associated with the repricing.
 
 The Lianhua Qingwen case also shows that spillovers can reverse. Online attention may produce short-term demand expectations, but once the initial demand shock fades or expectations adjust, market correction can follow. This makes the case analytically different from Nongfu Spring's persistent reputational damage and the salt panic's short commodity shock.
 \FloatBarrier
 
 \subsection{Boundary Case: Urumqi Fire, Protest Visibility, and Government Response}
-The Urumqi fire is treated as a boundary case rather than a consumer-goods case. Its inclusion is justified because it shows what happens when online attention becomes politically sensitive and difficult to contain. The trigger was the residential fire in Urumqi on November 24, 2022. Online mourning and anger became connected to broader criticism of Zero COVID controls, and the event became part of a wider protest signal \cite{dw2022urumqiprotests}. Figure~\ref{fig:urumqi_trends_airchina} situates the protest-attention spike alongside Air China's reopening-sensitive price movement.
+The Urumqi fire is treated as a boundary case rather than a consumer-goods case. Its inclusion is justified because it shows what happens when online attention becomes politically sensitive and difficult to contain. The trigger was the residential fire in Urumqi on November 24, 2022. Online mourning and anger became connected to broader criticism of Zero COVID controls, and the event became part of a wider protest signal \cite{dw2022urumqiprotests}.
 
-\begin{figure}[t]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{figures/C3_Fig1_Urumqi_Trends_vs_AirChina.png}
-    \caption{Boundary case: protest-related search attention and Air China stock price. The figure compresses visibility, policy reversal, and reopening-sensitive repricing into one short window.}
-    \label{fig:urumqi_trends_airchina}
+    \includegraphics[width=\columnwidth]{figures/C3_Fig1_Urumqi_Trends_vs_AirChina.png}
+    \caption{Urumqi protest visibility and Air China movement around the Zero COVID reversal window. The timing supports the boundary-case interpretation of policy-response spillover.}
+    \label{fig:urumqi_case}
 \end{figure}
 
-The main spillover in this case was not consumer purchasing behavior. It was policy pressure. Figure~\ref{fig:urumqi_trends_airchina} situates the protest-related attention window alongside reopening-sensitive market movement. The case therefore marks the outer boundary of the paper's argument: when online attention becomes sufficiently visible, platform control may shape the pathway of visibility, but it may not fully prevent the issue from becoming legible to the government.
+The main spillover in this case was not consumer purchasing behavior. It was policy pressure. Figure~\ref{fig:urumqi_case} situates the protest-related attention window alongside reopening-sensitive market movement. The case therefore marks the outer boundary of the paper's argument: when online attention becomes sufficiently visible, platform control may shape the pathway of visibility, but it may not fully prevent the issue from becoming legible to the government.
 
-The event sequence suggests a compressed relationship between protest visibility, policy change, and market repricing. Reopening-sensitive stocks began to move around the protest and policy-reversal window, while the December 7 ``New Ten Measures'' marked a major change in China's Zero COVID policy \cite{statecouncil2022tenmeasures,dw2022easing}. This does not mean that online attention alone caused the policy shift. The policy environment was already under pressure from economic, epidemiological, and administrative factors. However, the case shows how a politically sensitive attention event can become associated with state response once it reaches sufficient visibility \cite{zheng2021responsiveness,ruan2021punishment}. Figure~\ref{fig:urumqi_haidilao_tripcom} then shows that the repricing extended beyond Air China to Haidilao and Trip.com.
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\linewidth]{figures/C3_Fig3_Haidilao_TripCom_Price_Volume.png}
-    \caption{Boundary case: Haidilao and Trip.com during the protest and reopening windows. The comparison shows that repricing spread across reopening-sensitive firms rather than staying confined to one stock.}
-    \label{fig:urumqi_haidilao_tripcom}
-\end{figure}
+The event sequence suggests a compressed relationship between protest visibility, policy change, and market repricing. Reopening-sensitive stocks began to move around the protest and policy-reversal window, while the December 7 ``New Ten Measures'' marked a major change in China's Zero COVID policy \cite{statecouncil2022tenmeasures,dw2022easing}. This does not mean that online attention alone caused the policy shift. The policy environment was already under pressure from economic, epidemiological, and administrative factors. However, the case shows how a politically sensitive attention event can become associated with state response once it reaches sufficient visibility \cite{zheng2021responsiveness,ruan2021punishment}.
 
 As a boundary case, Urumqi helps clarify the difference between consumer-goods spillover and policy spillover. In the first three cases, online visibility is associated mainly with consumer behavior, brand perception, or market expectations. In the Urumqi case, visibility is associated with governance response. The case therefore supports the broader framework while remaining analytically distinct from the consumer-goods cases.
+\FloatBarrier
 
 \subsection{Cross-Case Comparison}
 The four cases show that visibility breakthroughs do not produce one uniform type of offline effect. Instead, the spillover depends on the event type.
 
 Nongfu Spring shows a brand-boycott pathway. The controversy developed through reputational conflict and produced a longer-lasting market decline. Salt panic shows a panic-buying pathway. The trigger was sudden, the attention spike was intense, and the response included both consumer hoarding and official supply reassurance. Lianhua Qingwen shows a medicine-demand pathway. The attention burst was connected to reopening-era health uncertainty, producing product-linked repricing followed by correction. Urumqi shows a boundary policy pathway. The attention was politically sensitive, and the main spillover was government response rather than consumer behavior.
 
-\begin{table*}[!b]
+\begin{table*}[!t]
 \centering
 \caption{Cross-Case Comparison}
 \label{tab:cross_case}
@@ -351,6 +324,7 @@ Urumqi fire & Fire and protest visibility & Boundary policy pathway & Government
 This comparison supports the paper's main claim. Online controversies in China become consequential not simply because they are discussed online, but because they move beyond their original platform spaces and become visible to actors outside the platform: consumers, investors, firms, regulators, or state agencies. The same visibility breakthrough can produce different outcomes depending on whether the issue concerns a brand, a basic commodity, a health product, or a politically sensitive event.
 
 At the same time, the comparison also limits the paper's claims. The cases are not representative of all online controversies in China. They are most-likely cases selected because each has a visible trigger and observable spillover. The findings should therefore be read as a theory-building comparison rather than as a population-level test.
+\FloatBarrier
 
 \section{Discussion}
 The paper's main finding is that online attention becomes consequential through visibility breakthrough, not through platform discussion alone. In China's governed platform environment, visibility is shaped by both amplification and restriction. Algorithms, trending lists, influencer participation, reposting, and short-video circulation can increase visibility, while moderation, censorship, search filtering, and platform intervention can reduce or redirect it. The survey results suggest that respondents perceive both processes at the same time: Chinese platform control is not viewed as simply suppressive, but as a system that can both amplify and constrain public attention.
@@ -387,17 +361,76 @@ The broader implication is that platform control does not eliminate online spill
 \bibliography{references}
 
 \clearpage
+\onecolumn
 \appendices
 \setcounter{figure}{0}
 \renewcommand{\thefigure}{A\arabic{figure}}
 \section{Supplementary Figures}
-Figure~\ref{fig:appendix_survey} retains one cleaned survey summary visualization from \texttt{survey\_outputs/}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{../survey_outputs/clean_survey_summary.png}
-    \caption{Survey-based triangulation of event awareness and perceived platform control. Data: author survey, $n=104$.}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{../survey_outputs/04_event_awareness.png}
+        \caption{Event familiarity.}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{../survey_outputs/05_first_source.png}
+        \caption{First source of awareness.}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{../survey_outputs/11_algorithm_amplification.png}
+        \caption{Algorithmic amplification.}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{../survey_outputs/12_moderation_reduction.png}
+        \caption{Moderation reduction.}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{../survey_outputs/19_behavior_type.png}
+        \caption{Consumer-behavior spillover.}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{../survey_outputs/18_agree_government_response.png}
+        \caption{Expected government response.}
+    \end{subfigure}
+    \caption{Survey-based triangulation of event awareness, first source of awareness, perceived platform control, consumer-behavior spillover, and expected government response. Data: author survey, $n=104$.}
     \label{fig:appendix_survey}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/Fig2_NongfuSpring_Price_Volume.png}
+    \caption{Nongfu Spring price and volume during the boycott window.}
+    \label{fig:appendix_nongfu_volume}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/Fig5_SaltPanic_Price_Volume.png}
+    \caption{Salt-stock price and volume during the Japan wastewater release window.}
+    \label{fig:appendix_salt_volume}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/C4_Fig3_Yiling_Tongrentang_Price_Volume.png}
+    \caption{Yiling Pharmaceutical and Tongrentang comparison during the reopening medicine-demand window.}
+    \label{fig:appendix_yiling_tongrentang}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/C3_Fig3_Haidilao_TripCom_Price_Volume.png}
+    \caption{Haidilao and Trip.com comparison during the protest and reopening windows.}
+    \label{fig:appendix_haidilao_tripcom}
 \end{figure}
 
 \end{document}
