@@ -1,0 +1,11 @@
+variable,spearman_rho_with_behavior_effect,p_value,n
+agree_market_effect,0.498,0.0,104
+algorithm_amplification,0.122,0.2156,104
+follow_closeness,0.118,0.2342,104
+discussion_seen,0.104,0.2952,104
+moderation_reduction,0.067,0.5018,104
+spread_speed,-0.004,0.9639,104
+agree_government_response,-0.01,0.9182,104
+agree_control_but_spread,-0.013,0.8935,104
+china_control_vs_us,-0.137,0.1667,104
+social_media_frequency,-0.165,0.0941,104
