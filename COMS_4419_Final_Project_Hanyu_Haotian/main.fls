@@ -784,6 +784,11 @@ INPUT ../survey_outputs/clean_survey_summary.png
 INPUT ../survey_outputs/clean_survey_summary.png
 INPUT ../survey_outputs/clean_survey_summary.png
 INPUT ../survey_outputs/clean_survey_summary.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
