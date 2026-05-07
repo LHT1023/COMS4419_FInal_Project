@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1778095065 "main.aux" "main.bbl" "main" 1778095068 0
+["bibtex main"] 1778119235 "main.aux" "main.bbl" "main" 1778119238 0
   "./references.bib" 1778036815 13757 7e59ba29fe9cb06a4067750e1d4e00bb ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1778095067 11621 c5b5bde8a3f4dfbdaa934133b74ef4e9 "pdflatex"
+  "main.aux" 1778119237 11621 cc11cac479695f75bb963cc0db801476 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778095065 "main.tex" "main.pdf" "main" 1778095068 0
+["pdflatex"] 1778119235 "main.tex" "main.pdf" "main" 1778119238 0
   "../survey_outputs/clean_survey_summary.png" 1778038865 187128 d7cd3c2c513fba7030e1dba5ffa1e583 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -126,10 +126,10 @@
   "figures/Fig2_NongfuSpring_Price_Volume.png" 1777233192 156018 fe7aa52743a60b930a21a3b2b90af26e ""
   "figures/Fig4_SaltPanic_Trends_vs_Stocks.png" 1777233192 224657 034181ef52fb4b791ecd54e62a4ed5a1 ""
   "figures/Fig5_SaltPanic_Price_Volume.png" 1777233192 146972 2bff887c8bae40d884d4078355f1a761 ""
-  "main.aux" 1778095067 11621 c5b5bde8a3f4dfbdaa934133b74ef4e9 "pdflatex"
-  "main.bbl" 1778095065 10385 f7e8e72bb16ef4bd53e040983bf929d2 "bibtex main"
-  "main.out" 1778095067 5765 5b453f9ea5f5845b5588f216997c9df4 "pdflatex"
-  "main.tex" 1778095010 53762 815dadddc321bec36529b5b2435a3fed ""
+  "main.aux" 1778119237 11621 cc11cac479695f75bb963cc0db801476 "pdflatex"
+  "main.bbl" 1778119235 10385 f7e8e72bb16ef4bd53e040983bf929d2 "bibtex main"
+  "main.out" 1778119237 5765 5b453f9ea5f5845b5588f216997c9df4 "pdflatex"
+  "main.tex" 1778119213 54028 23e7f9ca748018f39916b3a3c86f2daa ""
   (generated)
   "main.aux"
   "main.log"
